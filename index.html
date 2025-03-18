@@ -5,107 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        font-size:18px;
+        margin: 20px;
+        padding:20px;
+    }
+    .blog{
+        background-color: black;
+        color: white;
+    }
+    ul{
+        list-style: none;
+    }
+    header,.blog-section{
+        padding-left:200px ;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    .photogallery{
+        display: inline;
+    }
+    .photogallery img{
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    .contact{
+        display:flex;
+        justify-content: center;
+    }
+    .contact img{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    aside{
+        float:right;
+        margin-bottom:300px ;
+    }
+    .kit{
+        position: relative;
+        bottom: 20px;
+    }
+    .kit>ul{
+        list-style: none;
+        display:flex;
+        gap:30px;
+        background-color: rgb(26, 23, 23);
+        color: white;
+        height:60px;
+        align-items: center;
+
+    }
+    .kit-header{
+        background-color:grey;
+        height: 70px;
+        font-size: 30px;
+        font-weight:600;
+    }
+    .kit-image{
+        width: 300px;
+        height: 300px;
+    }
+    .kit-kare{
+        border:2px solid black ; 
+        padding: 0px;
+        margin: 0px;
+    }
+    .section-kit{
+        padding-left: 200px;
+    }
+    div{
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
 <body>
-    <!-- Text formating tags -->
-   <div style="border: 5px dotted black; width: 500px; padding: 10px;">
-      <h1>Inline Tags Task</h1>
-      <p>This is a paragraph of text with <bold>Bold</bold>,<i>italic</i> and inline tags</p>
-   </div>
-   <hr>
-     <!-- Adding hyper links to text -->
-    <div style="border: 5px dotted black; width: 500px; padding: 10px;">
-        <h1>Inline Tags Task</h1>
-        <p>This is a paragraph of text with <bold>Bold</bold>,<i>italic</i> and <a href="#">link</a>inline tags</p>
-    </div>
-     <hr>
-     <!-- Display Text in Different sizes-->
-     <div style="border: 5px dotted black; width: 500px; padding: 10px;">
-        <h1>line-1</h1>
-        <h2>line-2</h2>
-        <h3>line-3</h3>
-        <h4>line-4</h4>
-        <h5>line-5</h5>
-        <h6>line-6</h6>
-     </div>
-      <hr>
-      <!-- creating order and unorder list -->
-       <div style="border: 5px dotted black; width: 700px; padding: 40px;">
-         <h1>Here are the list types we use in html:</h1>
-         <hr>
-         <h2>ordered list</h2>
-         <ol>
-            <li>frist item</li>
-            <li>second item</li>
-            <li>third item</li>
-            <li>fourth item</li>
-            <li>fifth item</li>
-         </ol>
-         <h2>unorder list</h2>
-         <ul>
-            <li>Apple</li>
-            <li>Banana</li>
-            <li>Orange</li>
-            <li>Graps</li>
-            <li>Watermelon</li>
-         </ul>
-       </div>
-       <hr>
-       <!-- Using hyperlink inhtml -->
-       <div style="border: 5px dotted black; width: 700px; padding: 10px;">
-        <h1>Using hyperlink in html</h1>
+    <!-- Basic Website Layout -->
+    <div>
+        <header><h1>My exciting Website!</h1></header>
+        <nav class="blog">
+           <ul >
+               <li>Home</li>
+               <li>Blog</li>
+               <li>Aboutus</li>
+               <li>Our history</li>
+               <li>Contacts</li>
+           </ul>
+        </nav>
+        <section class="blog-section">
+           <h2>An Exciting Blog</h2>
+           <img src="/ai-generated-8775232_640.webp" alt="">
+           <p>Veggies ess bonus vobis,proinde vos postulo essum magis kohirabi weish onion daikon amaranth tatsoi tomatillo melon azuki bean garlic </p>
+           <p>Gumbo beet greet corn soko endiv gumbo ground .parsley shallot couragette tatasoi pea sprouts fava bean collard grrens dandelion okra wakame tomato .Dadelion cucumber earthnut pea peanut soko zucchini.</p>
+           <p>Trunip greens yarrow rice bean rutabage endiv cauliflower sea lettuce kohlrabi amaranth water spinach carrot soko.Lotus root water spinach fennelGumbo beet greet corn soko endiv gumbo ground .parsley shallot couragette tatasoi pea sprouts fava bean collard grrens dandelion okra wakame tomato .Dadelion cucumber earthnut pea peanut soko zucchiniTrunip greens yarrow rice bean rutabage endiv cauliflower sea lettuce kohlrabi amaranth water spinach carrot soko.Lotus root water spinach fennel</p>
+        </section>
         <hr>
-        <p>Click the link below to visit Amazon Website:</p>
-        <a href="https://www.bing.com/ck/a?!&&p=08629bc1bc046298a0ab71e6f2a9182866319d767e3bf7c0ebfc81a3afc42356JmltdHM9MTc0MjE2OTYwMA&ptn=3&ver=2&hsh=4&fclid=26970bde-1f22-635e-0d32-1e531eb062f0&psq=amazon&u=a1aHR0cDovL3d3dy5hbWF6b24uaW4&ntb=1">Amazon Website</a>
-        <p>Click the link below to visit Flipkart Website:</p>
-        <a href="https://www.bing.com/ck/a?!&&p=ca5c45c29a5d698ccdcf1774eaeddeab1c977a8548579add6781cb298e5b784bJmltdHM9MTc0MjE2OTYwMA&ptn=3&ver=2&hsh=4&fclid=26970bde-1f22-635e-0d32-1e531eb062f0&psq=flipkart&u=a1aHR0cHM6Ly93d3cuZmxpcGthcnQuY29tLw&ntb=1">Flipkart Website</a>
-        <p>Click the link below to visit Meesho Website:</p>
-        <a href="https://www.bing.com/ck/a?!&&p=0e0f70290ce735051ff02e90eae0d8675781d97f17df55d1791b914da37be6b6JmltdHM9MTc0MjE2OTYwMA&ptn=3&ver=2&hsh=4&fclid=26970bde-1f22-635e-0d32-1e531eb062f0&psq=meesho&u=a1aHR0cHM6Ly93d3cubWVlc2hvLmNvbS8&ntb=1">Meesho Website</a>
+        <hr>
+    </div>
+     <!-- Photo Gallery -->
+    <div>
+        <center>
+            <H1>Welcome UI Photo Gallery</H1>
+            <hr>
+            <h2>Welcome UI Photo Gallery</h2>
+           <div class="photogallery">
+             <img src="/ai-generated-8775232_640.webp" alt="">
+             <img src="/ai-generated-8775232_640.webp" alt="">
+             <img src="/ai-generated-8775235_640.webp" alt="">
+           </div>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus tempora ipsum explicabo iste voluptatem facilis earum sapiente repudiandae commodi a, nesciunt debitis ea, magni similique vel, aperiam delectus fugit aliquid quis? Ipsa commodi iure consequuntur esse fugiat dignissimos neque odio.</p>
+          <hr>
+          <h2>Description about the project</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio repudiandae vitae neque ut voluptates necessitatibus accusamus provident porro temporibus aliquam error consectetur aliquid animi, harum quae quidem voluptatum illum, cumque minus velit. Suscipit quod soluta vel molestiae quos sunt, perferendis totam cupiditate? Eum provident dolorum labore recusandae? A fugiat ducimus modi accusamus ut cum harum, labore neque eius. Quisquam.</p>
+           <hr>
+           <footer>
+              <p>&copy;2023 My Simple Web Page.All rights reserved</p>
+           </footer>
+        </center>
+    </div>
+<hr>
+<!-- Registeration form -->
+      <div>
+        <center>
+            <h2>Registeration Here</h2>
+            <h1>Please Fill And Submit Form:</h1>
+               <form action="index.php" method="post">
+                   <label for="name">Name:</label>
+                   <input type="text" name="name" id="name" placeholder="Enter your Name" required><br><br>
+                   <label for="email">Email:</label>
+                   <input type="email" name="email" id="email" placeholder="Enter your Email" required><br><br>
+                   <label for="Age">Age:</label>
+                   <input type="text" name="Age" id="Age" placeholder="Enter your age" required><br><br>
+                   <label for="dob">Date of birth:</label>
+                   <input type="date" name="dob" id="dob" required><br><br>
+                   <label for="phone">Phone number:</label>
+                   <select title="Country Code">
+                       <option value="">Select your code</option>
+                       <option value="+91">+91</option>
+                       <option value="+92">+92</option>
+                       <option value="+93">+93</option>
+                       <option value="+94">+94</option>
+                   </select>
+                   <input type="number" name="phone" id="phone" placeholder="Enter your Phone number" required><br><br>
+                   <label for="">Select your gender:</label>
+                   <input type="radio" name="gender" value="Male" title="Male">
+                   <label for="gender">Male</label>
+                   <input type="radio" name="gender" value="female" title="Female">
+                   <label for="gender">Female</label>
+                   <input type="radio" name="gender" value="others" title="Others">
+                   <label for="gender">others</label><br><br>
+                   <label for=""> Choose your Skill Level:</label>
+                   <input type="checkbox" name="skill" value="Beginner" title="Beginner">
+                   <label for="skill">Beginner</label>
+                   <input type="checkbox" name="skill" value="Intermediate" title="Intermediate">
+                   <label for="skill">Intermediate</label>
+                   <input type="checkbox" name="skill" value="Advanced" title="Advanced">
+                   <label for="skill">Advanced</label><br><br>
+                   <label for="color">Select your favorite color:</label>
+                   <input type="color" name="color" id="color" required><br><br>
+                   <label for="">Choose your language:</label>
+                   <input type="checkbox" name="language" value="Tamil" title="Tamil">
+                   <label for="language">Tamil</label>
+                   <input type="checkbox" name="language" value="English" title="English">
+                   <label for="language">English</label>
+                   <input type="checkbox" name="language" value="Malayalam" title="Malayalam">
+                   <label for="language">Malayalam</label><br><br>
+                   <label for="">Father Name:</label>
+                   <input type="text" name="fathername" id="fathername" placeholder="Enter your Father Name" required><br><br>
+                   <label for=""> Hobbies:</label>
+                   <input type="text" name="hobbies" id="hobbies" placeholder="Enter your Hobbies" required><br><br>
+                   <label for="Address">Address:</label>
+                   <textarea name="Address" id="Address"></textarea><br><br>
+                   <button type="submit">Submit</button>
+              </center>
+               <hr>
+               <hr>
+      </div>
+        <!-- Contact us Page -->
+       <div>
+        <center>
+            <h1>Contact Us</h1>
+            <p>If you have any questions or feedback,please feel free to contact us: </p>
+            <p><strong>Email:</strong>contact@example.com</p>
+            <p><strong>Phone:</strong>+123-456-7890</p>
+            <p>You can also visit our office:</p>
+            <p><em>123 Main Street <br>Cityville,State 12345 <br>United States</em></p>
+            <div class="contact">
+               <img src="/ai-generated-8775232_640.webp" alt="">
+               <p>Mens Casual Premium slims Fit T-shirts</p>
+               <img src="/ai-generated-8775235_640.webp" alt="">
+            </div>
+        </center>
+        <hr><hr>
        </div>
-       <hr>
-       <!-- website with appropriate tags -->
-        <div style="padding: 10px;">
-            <h1>Welcome to Fabulous Rental Shop</h1>
-            <p>Your one-stop Destination for Trendy Fashon and accessories!</p>
-            <hr>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <h2>>About Us</h2>
-            <p>We are leading fashion Retailer that offers a wide range of stylish clothing,footwear,and accessories for men and women. </p>
-            <p>With a passion for fashion and a commitment to quality,we strive to provide the latest trends at affordable prices</p>
-            <hr>
-            <h2>>Our Products</h2>
-            <h3>~clothing</h3>
-            <ul>
-                <li>Trendy Dresses</li>
-                <li>Casual T-Shirts</li>
-                <li>Formal Suits</li>
-                <li>Cozy Sweaters</li>
-            </ul>
-            <h3>~Footwear</h3>
-            <ul>
-                <li>Sneakers</li>
-                <li>High Heals</li>
-                <li>Boots</li>
-                <li>Sandels</li>
-            </ul>
-            <h3>~Accessories</h3>
-            <ul>
-                <li>Stylish Watches</li>
-                <li>Chic Handbags</li>
-                <li>Sunglasses</li>
-                <li>Statement Jewerlry</li>
-            </ul>
-            <hr>
-            <h2>>Contact Us</h2>
-            <p>Feel free to get in touch with us:</p>
-            <p>Email: <a href="email">info@fabulousretailshop.com</a></p>
-            <p>Phone:123-456-7890</p>
-            <p>Address:123 fashion Street,Cityville</p>
-            <hr>
-            &copy;2023 Fabulus Retail Shop.All rights reserved.
+        <!--informational Webpage-->
+        <div class="kit-kare">
+            <header class="kit-header">
+                Kitten Kare
+            </header>
+            <nav class="kit">
+                <ul>
+                    <li>Home |</li>
+                    <li>About |</li>
+                    <li>Section</li>
+                </ul>
+            </nav>
+            <section class="section-kit">
+                <h2>Welcome!</h2>
+                <aside>
+                    <h3>Cat Body types</h3>
+                    <ul>
+                        <li>Oriental</li>
+                        <li>Foreign</li>
+                        <li>Semi-foreign</li>
+                        <li>Semi-Cobby</li>
+                        <li>Cobby</li>
+                    </ul>
+                </aside>
+                <img class="kit-image" src="/ai-generated-8775235_640.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt, dolorum accusantium delectus commodi eos officia porro assumenda repellendus eveniet illo ea voluptas nulla laboriosam? Veniam eaque officiis nisi, magnam, optio placeat ratione voluptate voluptas perferendis qui eos, ipsum quaerat vitae cum quasi omnis! Molestias tenetur, animi natus earum quia id aut eaque tempora vero, iure quibusdam debitis magnam? Sed placeat beatae, corporis debitis architecto pariatur harum libero aut accusantium laboriosam illum reiciendis perspiciatis, unde quae nemo earum nobis modi obcaecati dolor corrupti eius. Laborum, necessitatibus eius ipsam blanditiis modi consequatur neque rerum error quos ducimus quam consequuntur eos. Vero?</p>
+            </section>
         </div>
-    </body>
+        <hr><hr>
+
+</body>
 </html>
