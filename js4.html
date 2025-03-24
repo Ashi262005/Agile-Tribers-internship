@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Positive or Negative Number
+function checkSign(number) {
+    if (number > 0) {
+        console.log("The number is positive.");
+    } else if (number < 0) {
+        console.log("The number is negative.");
+    } else {
+        console.log("The number is zero.");
+    }
+}
+checkSign(5);  
+checkSign(-3);
+checkSign(0); 
+
+//Even or Odd
+function checkEvenOdd(number) {
+    if (number % 2 === 0) {
+        console.log("The number is even.");
+    } else {
+        console.log("The number is odd.");
+    }
+}
+checkEvenOdd(4);
+checkEvenOdd(7);
+//Calculate Power
+function calculatePower(base, exponent) {
+    console.log(base ** exponent);
+}
+calculatePower(5, 2);
+calculatePower(3, 3);
+//Compare Two Numbers
+function compareNumbers(a, b) {
+    if (a > b) {
+        console.log(`${a} is greater than ${b}.`);
+    } else if (a < b) {
+        console.log(`${b} is greater than ${a}.`);
+    } else {
+        console.log(`${a} and ${b} are equal.`);
+    }
+}
+compareNumbers(8, 10); 
+compareNumbers(5, 5); 
+//Check Leap Year
+function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        console.log(`${year} is a leap year.`);
+    } else {
+        console.log(`${year} is not a leap year.`);
+    }
+}
+isLeapYear(2024);
+isLeapYear(1900); 
+//Grade Calculator
+function calculateGrade(score) {
+    if (score >= 90) {
+        console.log("Grade: A");
+    } else if (score >= 80) {
+        console.log("Grade: B");
+    } else if (score >= 70) {
+        console.log("Grade: C");
+    } else if (score >= 60) {
+        console.log("Grade: D");
+    } else {
+        console.log("Grade: F");
+    }
+}
+calculateGrade(85);
+calculateGrade(50); 
+//Age-Based Messages
+function ageMessage(age) {
+    if (age < 16) {
+        console.log("You can't drive.");
+    } else if (age >= 16 && age <= 17) {
+        console.log("You can drive but not vote.");
+    } else if (age >= 18 && age <= 24) {
+        console.log("You can vote but not rent a car.");
+    } else {
+        console.log("You can do pretty much anything.");
+    }
+}
+ageMessage(15);
+ageMessage(18); 
+//FizzBuzz Challenge
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+//Leap Year Checker (Repeated)
+
+function checkLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        console.log(`${year} is a leap year.`);
+    } else {
+        console.log(`${year} is not a leap year.`);
+    }
+}
+checkLeapYear(2024); 
+checkLeapYear(2023); 
+    </script>
+</body>
+</html>
