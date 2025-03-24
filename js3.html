@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//1     
+    function sayHello(name = "World") {
+        console.log(`Hello, ${name}!`);
+    }
+    sayHello();        
+    sayHello("Ashika"); 
+//2
+    function add(a, b) {
+        return a + b;
+    }
+    console.log(add(5, 3));  
+    console.log(add(10, 20)); 
+//3
+    let multi = function(x, y) {
+        return x * y;
+    };
+    console.log(multi(2, 3)); 
+    console.log(multi(4, 5)); 
+//4
+    function multiply(a, b) {
+    return a * b;
+}
+    console.log(multiply(6, 7));
+//5
+    function divide(a, b) {
+        if (b !== 0) {
+            return a / b;
+        } else {
+            return "Cannot divide by zero";
+        }
+    }
+    console.log(divide(10, 2));
+    console.log(divide(10, 0)); 
+//6
+    function factorial(n) {
+        if (n === 0 || n === 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+    console.log(factorial(5)); 
+    console.log(factorial(3));
+//7
+    function square(number) {
+        return number * number;
+    }
+    console.log(square(4)); 
+    console.log(square(7));      
+    </script>
+</body>
+</html>
