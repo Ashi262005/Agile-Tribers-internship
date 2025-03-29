@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:black;
+      color:white;
+      padding: 15px 30px;
+      font-weight:600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    button{
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        border-radius: 50px;
+        border: none;
+        width: 200px;
+        height: 50px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items:end;
+      background-color: #f4f4f4;
+      padding: 50px 30px;
+    }
+
+    .hero-text {
+      width: 50%;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 200px;
+      bottom: 50px;
+      gap: 20px;
+    }
+    
+    .hero-image {
+      background-color: #ccc;
+      height: 300px;
+    }
+    .subheading{
+      position: relative;
+      margin-top:100px;
+      margin-left: 250px;
+    }
+    .cards {
+      display: flex;
+      justify-content:center;
+      padding: 50px 30px;
+      background-color: #fff;
+      gap: 40px;
+    }
+    .card {
+      background-color: #f8e8e8;
+      width: 300px;
+      padding:20px;
+      border-radius: 8px;
+      text-align: start;
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card button{
+      width: 50%;
+      border-radius: 0;
+      padding: 10px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .footer-column {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    small{
+      opacity: 0.4;
+      font-size: 13px;
+    }
+    .icons{
+      height:25px;
+      width:25px;
+      background-color: white;
+    }
+    span{
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Bloom</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfoilo</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Our Restarent</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque dolore, accusantium quam cumque maxime cupiditate quisquam porro dignissimos aspernatur!</p>
+      <button type="button">Learn more</button>
+    </div>
+    <div class="hero-image"><img src="j20.jpg" alt=""></div>
+  </div>
+  <h1 class="subheading">This is Heading </h1>
+  <div class="cards">
+    <div class="card">
+      <img src="j20.jpg" alt="">
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptate, cumque porro impedit corrupti voluptates. Laborum ducimus velit hic consequuntur.</div>
+      <button type="button">Learn more</button>
+    </div>
+    <div class="card">
+     <img src="j20.jpg" alt="">
+     <h3>Lorem ipsum dolor sit amet.</h3>
+     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptate, cumque porro impedit corrupti voluptates. Laborum ducimus velit hic consequuntur.</div>
+     <button type="button">Learn more</button>
+    </div>
+    <div class="card">
+     <img src="j20.jpg" alt="">
+     <h3>Lorem ipsum dolor sit amet.</h3>
+     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptate, cumque porro impedit corrupti voluptates. Laborum ducimus velit hic consequuntur.</div>
+     <button type="button">Learn more</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-column">
+      <h3>Latest Posts</h3>
+      <span> <img class="icons" src="Calender-29-64.webp" alt=""><p>Aliquam et iaculis sapien</p></span>
+        <small>Lorem ipsum dolor sit amet.</small>
+      <span> <img class="icons" src="Calender-4-64.webp" alt=""><p>Aliquam et iaculis sapien</p></span>
+        <small>Lorem ipsum dolor sit amet.</small>
+        <span> <img class="icons" src="Calender-9-64.webp" alt=""><p>Aliquam et iaculis sapien</p></span>
+        <small>Lorem ipsum dolor sit amet.</small>
+    </div>
+    <div class="footer-column">
+      <h3>About Us</h3>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, provident!</p>
+      <br>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt tempore doloremque animi harum quia repellat eos qui eius? Laborum, odio.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Stay Connected</h3>
+      <span> <img class="icons" src="facebook.png" alt=""><p>Facebook</p></span>
+      <span><img class="icons" src="Rss.png" alt=""><p>Rss</p></span>
+      <span> <img class="icons" src="google.png" alt=""><p>Google+</p></span>
+      <span><img class="icons" src="twitter.png" alt=""><p>Twitter</p></span>
+    </div>
+  </div>
+</body>
+</html>
