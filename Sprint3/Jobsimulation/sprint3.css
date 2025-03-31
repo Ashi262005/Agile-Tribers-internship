@@ -1,0 +1,103 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.invitation {
+    margin-top: 50px;
+    margin-left: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 1000px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.left-side {
+    flex:3;
+    background-image: url('download.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding:10px;
+   
+}
+.right-side {
+    background-image: url(download.jpg);
+   background-color: rgba(0, 0, 0, 0.507);
+    background-size: cover;
+    padding:10px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 5px dotted white;
+}
+.left-side .header {
+    background-color:rgba(165, 42, 42, 0.747);
+    color: white;
+    border-radius: 5px;
+    width: 900px;
+    padding:20px;
+    position: relative;
+    bottom:20px;
+    right: 20px;
+    text-align: center;
+}
+.right-side .header {
+    background-color: rgba(165, 42, 42, 0.747);
+    color: white;
+    border-radius: 5px;
+    padding:21px;
+    width:100%;
+    position: relative;
+    bottom:20px;
+    right:20px;
+    margin-left: 30px;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+.destination h1 {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin: 15px 0;
+}
+.destination1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+strong{
+   color: rgb(2, 2, 49);
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.content2{
+    font-size: 20px;
+    font-weight: 800;
+    font-style: oblique;
+    letter-spacing: 2px;
+    rotate: -30deg;
+}
+.img2
+{
+    border-radius:100%;
+   
+}
+.img1{
+    width:200px;
+   margin: 0 auto;
+}
+
