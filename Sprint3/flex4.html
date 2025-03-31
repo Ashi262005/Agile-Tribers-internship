@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       .ticket {
+             margin-top: 50px;
+             margin-left: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            width: 900px;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .left-side {
+            background-color: #f4f4f4;
+            padding: 20px;
+            flex:3;
+            background-image: url('world map.png');
+            background-size: cover;
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+           overflow: hidden;
+           
+        }
+        .right-side {
+            background-color: #f3eded;
+            padding:10px;
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 9px dotted white;
+            
+        }
+        .left-side .header {
+            background-color: rgba(24, 117, 238, 0.671);
+            color: white;
+            border-radius: 5px;
+            width: 900px;
+            padding:20px;
+            position: relative;
+            bottom:20px;
+            right: 20px;
+        }
+        .right-side .header {
+            background-color: rgb(8, 36, 73);
+            color: white;
+            border-radius: 5px;
+            padding:20px;
+            width:100%;
+            position: relative;
+            bottom:20px;
+            right:20px;
+            margin-left: 30px;
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            gap: 20px;
+        }
+        .section1{
+            display: flex;
+            gap: 20px;
+           
+        }
+        .section1{
+            position:relative;
+            left:100px;
+        }
+        .destination{
+             position:relative;
+              left: 40px;
+        }
+        .row1, .row2, .row3, .row4, .row5, .row6, .row7 {
+            margin-bottom: 10px;
+        }
+        .destination h1 {
+            font-size: 25px;
+            font-weight: 800;
+            text-align: center;
+            margin: 15px 0;
+        }
+        strong{
+            color: red;
+        }
+        p{
+            font-size: small;
+            color: grey;
+        }
+        .img2{
+            width:200px;
+            rotate:90deg;
+            position: absolute;
+            bottom: 450px;
+            right:1050px;
+        }
+        .img1{
+            width:200px;
+        }
+        .section{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="left-side">
+            <div class="header">
+                <h3>BORDING PASS</h3>
+                <h6>AIRLINE COMPANY</h6>
+            </div>
+            <div class="body">
+                <img class="img2" src="barcode.png" alt="">
+                <div class="section1">
+                    <div class="row1">
+                        <p>PASSENGER</p>
+                        <h4>JOHN DOE</h4>
+                    </div>
+                    <div class="row2">
+                        <p>FLIGHT</p>
+                        <h4>AV 1A7</h4>
+                    </div>
+                    <div class="row3">
+                        <p>DATE</p>
+                        <h4>27 JUN2022</h4>
+                    </div>
+                    <div class="row4">
+                        <p>SEAT</p>
+                        <h4>4B</h4>
+                    </div>
+                </div>
+                <div class="destination">
+                    <div class="row5">
+                        <h1>LONDON✈️TOKYO</h1>
+                    </div>
+                </div>
+                <div class="section1">
+                    <div class="row6">
+                        <strong>GATE</strong>
+                        <h4>25 A</h4>
+                    </div>
+                    <div class="row7">
+                        <strong>BORDING TIME</strong>
+                        <h4>06:30</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="header"><h3>LONDON✈️TOKYO</h3></div>
+            <div class="row1">
+                <p>PASSENGER</p>
+                <h4>JOHN DOE</h4>
+            </div>
+            <div class="section">
+                <div class="row2">
+                    <p>FLIGHT</p>
+                    <h4>AV 1A7</h4>
+                </div>
+                <div class="row4">
+                    <p>SEAT</p>
+                    <h4>4B</h4>
+                </div>
+            </div>
+            <div class="row3">
+                <p>DATE</p>
+                <h4>27 JUN2022</h4>
+            </div>
+            <div class="row6">
+                <p>GATE</p>
+                <h4>25 A</h4>
+            </div>
+            <img class="img1" src="barcode.png" alt="">
+        </div>
+    </div>
+</body>
+</body>
+</html>
