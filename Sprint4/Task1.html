@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: grey;
+            border: none;
+            border-radius: 20px;
+        }
+        button:active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Task 1: Button Click Event</h1>
+        <button onclick="btnclick()">Click Me</button>
+        <script>
+            function btnclick() {
+                console.log("Button Clicked");
+            }
+        </script>
+        <hr>
+        <h1>Task 2: Button Click - Sum of Two Variables</h1>
+        <button onclick="btnsum()">Get Sum</button>
+        <script>
+            var num1 = 10, num2 = 20;
+            function btnsum() {
+                console.log("Sum=", num1 + num2);
+            }
+        </script>
+        <hr>
+        <h1>Task 3: Input Box Value Retrieval</h1>
+        <input type="text" id="inputBox1">
+        <button onclick="Retrieve()">Retrieve</button>
+        <script>
+            function Retrieve() {
+                console.log(document.getElementById("inputBox1").value);
+            }
+        </script>
+        <hr>
+        <h1>Task 4: Input Box Value Display</h1>
+        <input type="text" id="inputBox2">
+        <button onclick="disply()">Display</button>
+        <p id="displayText"></p>
+        <script>
+            function disply() {
+                document.getElementById("displayText").innerHTML = document.getElementById("inputBox2").value;
+            }
+        </script>
+        <hr>
+        <h1>Task 5: Input Box - OnChange Event</h1>
+        <input type="text" id="inputBox3">
+        <script>
+            document.getElementById("inputBox3").onchange = function() {
+                console.log("Input Changed: " + this.value);
+            };
+        </script>
+        <hr>
+        <h1>Task 6: Double Click Event</h1>
+        <button ondblclick="dblclick()">Double Click</button>
+        <h2 id="doubleClickMsg"></h2>
+        <script>
+            function dblclick() {
+                document.getElementById("doubleClickMsg").innerHTML = "Button was clicked double!";
+            }
+        </script>
+        <hr>
+        <h1>Task 7: Mouse Enter and Leave Event</h1>
+        <div id="hoverDiv" style="width:200px;height:100px;background-color:lightgray;text-align:center;line-height:100px;">
+            Hover over me
+        </div>
+        <script>
+            let hoverDiv = document.getElementById("hoverDiv");
+            hoverDiv.onmouseenter = function() {
+                hoverDiv.innerText = "Mouse entered!";
+            };
+            hoverDiv.onmouseleave = function() {
+                hoverDiv.innerText = "Mouse left!";
+            };
+        </script>
+        <hr>
+        <h1>Task 8: Key Press and Key Release Event</h1>
+        <input type="text" id="keyInput">
+        <script>
+            let keyInput = document.getElementById("keyInput");
+            keyInput.onkeypress = function() {
+                console.log("Key pressed!");
+            };
+            keyInput.onkeyup = function() {
+                console.log("Key released!");
+            };
+        </script>
+    </div>
+</body>
+</html>
