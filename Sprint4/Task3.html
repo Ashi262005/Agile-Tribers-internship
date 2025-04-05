@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       console.log("Task 1: Creating & Updating an Object")
+       var person = {
+           name: "Ashika",
+           age: 25,
+           city: "Marthandam"
+       };
+        console.log(person.name, person.age, person.city);
+        person.city = "Nagercoil";
+        console.log(person);
+
+        console.log("Task 2: Object with a Method")
+        var user = {
+            firstName: "Ashika",
+            lastName: "alexander",
+            FullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+       console.log(user.FullName());
+       console.log("Task 3: Working with JSON Strings")
+       let jsonString = '{"name": "Ashika", "email": "Ashika@gmail.com", "skills": ["Html", "Css", "Javascript","Bootstrap"]}';
+       let jsonObj = JSON.parse(jsonString);
+       console.log(jsonObj.name);
+       console.log(jsonObj.email);
+       console.log(jsonObj.skills);
+
+       console.log("Task 4: Fetching Data from a Local JSON File")
+       fetch('data.json')
+       .then(response => response.json())
+       .then(data => {
+        console.log(data);
+        })
+      .catch(error => {
+      console.error("Error loading JSON:", error);
+      });
+
+    </script>
+</body>
+</html>
