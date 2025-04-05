@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            text-align: center;
+            line-height: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 400px;
+        }
+        button{
+            background-color: grey;
+            border: none;
+            border-radius: 20px;
+            height: 30px;
+            width: 100px;
+        }
+        button:active{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 id="title">Choose Your Preferences</h2>
+
+        <h3>Favorite Color</h3>
+        <label><input type="radio" name="color" value="Red"> Red</label>
+        <label><input type="radio" name="color" value="Blue"> Blue</label>
+        <label><input type="radio" name="color" value="Black"> Black</label>
+
+        <h3>Comfortable Mode</h3>
+        <label><input type="checkbox" class="feature" value="Dark Mode"> Dark Mode</label>
+        <label><input type="checkbox" class="feature" value="Notifications"> Light Mode</label>
+        <label><input type="checkbox" class="feature" value="Auto-Save"> Adjustable Mode</label>
+
+        <br><br>
+        <button onclick="displaySelected()">Submit</button>
+
+        <p id="result"></p>
+    </div>
+    <script src="Task2.js"></script>
+</body>
+</html>
