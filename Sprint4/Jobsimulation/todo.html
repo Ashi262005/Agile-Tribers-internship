@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .todo{
+            margin:0 auto ;
+            gap: 10px;
+            text-align: center;
+            width: 600px;
+            background:radial-gradient(red,black);
+            border-radius: 50px;
+            padding: 10px;
+        }
+        button{
+            background-color: darkcyan;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.1s  linear;
+        }
+        button:active{
+            background-color: green;
+        }
+        input{
+            border:1px solid darkgrey;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        ul{
+            text-align: start;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        li{
+            display: flex;
+            gap: 10px;
+            color: white;
+        }
+        .Edit{
+            background-color: yellow;
+            color: black;
+        }
+        .Delete{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+   <div class="todo">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+   </div>
+    <script>
+        function addTask() {
+          const input = document.getElementById('taskInput');
+          const taskText = input.value.trim();
+       if (!taskText) return;
+         const li = document.createElement('li');
+         li.innerHTML = `<span>${taskText}</span><button class="Edit" onclick="editTask(this)">Edit</button><button class="Delete" onclick="deleteTask(this)">Delete</button> `;
+        document.getElementById('taskList').appendChild(li);
+        input.value = '';
+      }
+function editTask(button) {
+  const span = button.parentElement.querySelector('span');
+  const newTask = prompt('Edit task:', span.textContent);
+  if (newTask !== null) {
+    span.textContent = newTask;
+  }
+}
+
+function deleteTask(button) {
+  const li = button.parentElement;
+  li.remove();
+}
+</script>
+</body>
+</html>
