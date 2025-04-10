@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     // Task1 
+     console.log("Task1")
+     num=[2,3,4];
+    function squareNumbersTraditional(arr) {
+        return arr.map(function(num) {
+          return num * num;
+        });
+      }
+      console.log(squareNumbersTraditional(num));
+    //   Arrow function
+    console.log(" Arrow function")
+    num=[5,6,7];
+    const squareNumbersArrow = (arr) => arr.map(num => num * num);
+    console.log(squareNumbersArrow(num));
+
+
+    //   Task2
+    console.log("Task2")
+
+    function mergeArrays(obj1, obj2,obj3) {
+      return { ...obj1, ...obj2,...obj3};
+    }
+    const obj1={a:4,b:6};
+    const obj2={d:0,e:8};
+    const obj3={f:9,g:9};
+    let result= mergeArrays(obj1,obj2,obj3);
+    console.log(result)
+
+
+    // Task3
+    console.log("Task3")
+
+    const students=[{name:"Alice",score:96},
+                    {name:"bob",score:92},
+                    {name:"Charlie",score:78}
+                   ];
+    function getStudentScore(students, name) {
+      const studentMap = new Map();
+      students.forEach(student => {
+        studentMap.set(student.name, student.score);
+      });
+      return studentMap.get(name);
+    }
+    console.log(getStudentScore(students,"bob"));
+
+
+    // Task4
+    console.log("Task4")
+
+    function getUniqueNumbers(numbers) {
+      return [...new Set(numbers)];
+    }
+    const input=[1, 2, 2, 3, 4, 4, 5];
+    const output=getUniqueNumbers(input);
+    console.log(output);
+
+
+    // Task5
+    console.log("Task5")
+
+    function filterLongWords(words) {
+    return words.filter(word => word.length > 5);
+    }
+    const inputWords=['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape'];
+    const outputWords=filterLongWords(inputWords);
+    console.log(outputWords);
+
+
+   // Task6
+   console.log("Task6")
+
+   function getProduct(arr) {
+     return arr.reduce((acc, num) => acc * num, 1);
+   }
+    const Numbers=[9,8,7,6,5,4,3,2,1];
+    const product=getProduct(Numbers);
+    console.log(product);
+
+
+   // Task7
+   console.log("Task7")
+
+   function findFirstAndLastIndex(arr, element) {
+     return {
+       firstIndex: arr.indexOf(element),
+       lastIndex: arr.lastIndexOf(element)
+     };
+   }
+   const numbers = [1, 2, 3, 2, 4, 2,5];
+   const index=findFirstAndLastIndex(numbers);
+   console.log(index);
+
+
+   // Task8
+   console.log("Task8")
+
+   function isArray(variable) {
+     return Array.isArray(variable);
+   }
+   const arry=[1,2,3];
+   const string="Ashika";
+   const boolean=isArray(arry);
+   const str=isArray(string);
+   console.log(boolean,str);
+
+
+   // Task9
+   console.log("Task9")
+
+   function includesWord(sentence, word) {
+     return sentence.includes(word);
+   }
+   const sentence="The quick brown fox jumps over the lazy dog";
+   const word="dog";
+   console.log(includesWord(sentence, word));
+
+
+   // Task10
+   console.log("Task10")
+
+   function printArrayKeys(arr) {
+     for (let key of arr.keys()) {
+       console.log(key);
+     }
+   }
+   let D=["Apple","Banana","cherry"];
+   printArrayKeys(D);
+</script>
+</body>
+</html>
