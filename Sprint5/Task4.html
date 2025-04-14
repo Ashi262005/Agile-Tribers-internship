@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Task1
+        console.log("Task1")
+        function findFirstPositive(arr) {
+         return arr.find(num => num > 0);
+       }
+       console.log(findFirstPositive([-5, -3, 0, 9, 2])); 
+ 
+
+       //Task2
+       console.log("Task2")
+       function findBookByTitle(books, title) {
+         return books.find(book => book.title === title);
+       }
+       const books = [
+         { title: '1984', author: 'George Orwell' },
+         { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+         { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' }
+       ];
+       console.log(findBookByTitle(books, '1984'));
+
+       //Task3
+       console.log("Task3")
+       function findEmployeeById(employees, id) {
+         return employees.find(emp => emp.id === id);
+       }
+       const employees = [
+         { id: 1, name: 'Alice', position: 'Manager' },
+         { id: 2, name: 'Bob', position: 'Engineer' },
+         { id: 3, name: 'Charlie', position: 'Technician' }
+       ];
+       console.log(findEmployeeById(employees, 2));
+
+
+       //Task4
+       console.log("Task4")
+       function isPrime(num) {
+         if (num < 2) return false;
+         for (let i = 2; i <= Math.sqrt(num); i++) {
+           if (num % i === 0) return false;
+         }
+         return true;
+       }
+       function findFirstPrime(arr) {
+         return arr.find(isPrime);
+       }
+       console.log(findFirstPrime([4, 6, 8, 9, 11, 15])); 
+
+       //Task5
+       console.log("Task5")
+       function formatPerson({ firstName, lastName, age }) {
+         return `${firstName} ${lastName} is ${age} years old.`;
+       }
+       console.log(formatPerson({ firstName: 'John', lastName: 'Doe', age: 30 }));
+
+       //Task6
+       console.log("Task6")
+       function squareEvenNumbers(arr) {
+          return arr.filter(num => num % 2 === 0).map(num => num * num);
+        }
+        console.log(squareEvenNumbers([1, 2, 3, 4, 5, 6])); 
+
+
+        //Task7
+        console.log("Task7")
+        function joinWords(separator = ',', ...words) {
+         return words.join(separator);
+       }
+       console.log(joinWords('-', 'apple', 'banana', 'cherry')); 
+       console.log(joinWords('apple', 'banana', 'cherry')); 
+       
+
+       //Task8
+       console.log("Task8")
+       function mergeUnique(arr1, arr2) {
+         return [...new Set([...arr1, ...arr2])];
+       }
+       console.log(mergeUnique([1, 2, 3], [3, 4, 5]));
+      
+       
+       //Task10
+       console.log("Task10")
+       function aboveAverageProducts(products) {
+         const total = products.reduce((sum, { price }) => sum + price, 0);
+         const average = total / products.length;
+
+         return products
+           .filter(({ price }) => price > average)
+           .map(({ name }) => name);
+       }
+       const items = [
+         { name: 'Laptop', price: 1000 },
+         { name: 'Phone', price: 500 },
+         { name: 'Tablet', price: 700 }
+       ];
+       console.log(aboveAverageProducts(items)); 
+       
+
+        //Task9
+        console.log("Task9")
+       async function fetchTodo() {
+         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+         const data = await response.json();
+         return data;
+       }
+       fetchTodo().then(console.log);
+    </script>
+</body>
+</html>
