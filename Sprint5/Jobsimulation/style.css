@@ -1,0 +1,80 @@
+
+   body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .container {
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(background22.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-size: cover;
+    
+  }
+  .search,.enter{
+    margin-bottom: 20px;
+  }
+  input{
+    width: 500px;
+    display: flex;
+    margin-bottom:30px ;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    
+  }
+  li {
+    font-weight: bold;
+    color:white;
+    margin: 5px 0;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    width: 500px;
+    cursor: grab;
+  }
+  
+  li.dragging {
+    opacity: 0.5;
+  }
+  button{
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius:20px;
+    background-color: rgb(59, 192, 59);
+    color: white;
+  }
+  button:active{
+    box-shadow: 2px 2px 5px ;
+  }
+  
+  button.edit, button.delete {
+    margin-left: 5px;
+    border-radius: 5px;
+  }
+  button.edit{
+    background-color: rgb(247, 247, 4);
+    color: black;
+  }
+  button.delete{
+    background-color: red;
+  }
+  #studentCount{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #clearAllBtn{
+    background-color: red;
+  }
+  
