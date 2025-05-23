@@ -1,0 +1,41 @@
+
+.light-mode {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+.light-mode button{
+    background-color: black;
+    color: white;
+}
+.dark-mode p{
+    color:white;
+}
+.dark-mode button{
+    background-color: white;
+    color: black;
+}
+.dark-mode {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+.page{
+    width: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}
