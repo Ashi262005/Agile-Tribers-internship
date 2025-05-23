@@ -1,0 +1,181 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation, 40-hour battery life, comfortable over-ear design, Bluetooth 5.0 connectivity, and built-in microphone for hands-free calls.",
+      "price": 199.99,
+      "image": "src/Images/Wireless headphone.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Smart Watch",
+      "description": "Feature-rich smartwatch with health monitoring, heart rate and sleep tracking, GPS, water resistance, customizable watch faces, and notifications for calls and messages.",
+      "price": 249.99,
+      "image": "src/Images/Smart watch.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Bluetooth Speaker",
+      "description": "Portable speaker with 20-hour battery life, deep bass, waterproof design (IPX7), Bluetooth 5.0, built-in microphone, and compact size for easy travel.",
+      "price": 89.99,
+      "image": "src/Images/Bluetooth Speaker.avif"
+    },
+    {
+      "id": "4",
+      "name": "Laptop Backpack",
+      "description": "Durable backpack with USB charging port, padded laptop compartment (fits up to 15.6\"), water-resistant material, multiple pockets, and ergonomic shoulder straps.",
+      "price": 49.99,
+      "image": "src/Images/Laptop Backpack.webp"
+    },
+    {
+      "id": "5",
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with silent clicks, adjustable DPI settings, long battery life, USB receiver, and comfortable grip for extended use.",
+      "price": 29.99,
+      "image": "src/Images/Wireless Mouse.jpg"
+    },
+    {
+      "id": "6",
+      "name": "USB-C Hub",
+      "description": "7-in-1 USB-C hub with 4K HDMI, 3 USB 3.0 ports, SD/TF card reader, PD charging, and aluminum body for laptops and tablets.",
+      "price": 39.99,
+      "image": "src/Images/USB-C-Hub.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Mechanical Keyboard",
+      "description": "RGB backlit mechanical keyboard with blue switches, customizable lighting effects, anti-ghosting keys, detachable wrist rest, and durable metal frame.",
+      "price": 79.99,
+      "image": "src/Images/Mechanical Keyboard.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Portable SSD",
+      "description": "1TB portable SSD with USB 3.1 support, ultra-fast data transfer speeds, shock-resistant design, compact and lightweight for easy portability.",
+      "price": 129.99,
+      "image": "src/Images/Portable SSD.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Webcam",
+      "description": "1080p HD webcam with built-in microphone, auto light correction, plug-and-play USB, wide-angle lens, and privacy cover for secure video calls.",
+      "price": 59.99,
+      "image": "src/Images/Web camera.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Wireless Charger",
+      "description": "Fast wireless charger compatible with all Qi devices, 10W output, slim design, LED indicator, and overcharge protection for safe charging.",
+      "price": 24.99,
+      "image": "src/Images/Wireless Charger.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Fitness Tracker",
+      "description": "Waterproof fitness tracker with heart rate monitor, step counter, sleep analysis, multi-sport modes, and smartphone notifications.",
+      "price": 54.99,
+      "image": "src/Images/Fitness Tracker.avif"
+    },
+    {
+      "id": "12",
+      "name": "Tablet Stand",
+      "description": "Adjustable aluminum tablet stand for desk, compatible with most tablets and phones, foldable design, anti-slip base, and cable management.",
+      "price": 19.99,
+      "image": "src/Images/Tablet Stand.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Noise Cancelling Earbuds",
+      "description": "True wireless earbuds with active noise cancellation, touch controls, wireless charging case, sweat resistance, and up to 30 hours playtime.",
+      "price": 99.99,
+      "image": "src/Images/Noise Cancelling Earbuds.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Gaming Mouse Pad",
+      "description": "Large RGB gaming mouse pad with non-slip base, customizable lighting modes, smooth surface for precise control, and waterproof coating.",
+      "price": 25.99,
+      "image": "src/Images/Gaming Mouse Pad.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Smart LED Bulb",
+      "description": "WiFi-enabled smart LED bulb with app control, voice assistant compatibility, adjustable brightness and color, energy efficient, and easy installation.",
+      "price": 14.99,
+      "image": "src/Images/Smart LED Bulb.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Action Camera",
+      "description": "4K waterproof action camera with accessories, wide-angle lens, image stabilization, WiFi connectivity, and long battery life for outdoor adventures.",
+      "price": 119.99,
+      "image": "src/Images/Action Camera.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Laptop Cooling Pad",
+      "description": "Ultra-slim laptop cooling pad with LED fans, adjustable height, quiet operation, USB powered, and supports laptops up to 17 inches.",
+      "price": 34.99,
+      "image": "src/Images/Laptop Cooling Pad.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Portable Projector",
+      "description": "Mini portable projector with HDMI and USB, 1080p support, built-in speakers, compact design, and easy setup for home or outdoor use.",
+      "price": 149.99,
+      "image": "src/Images/Portable Projector.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Smart Plug",
+      "description": "WiFi smart plug with voice control support, energy monitoring, timer function, remote control via app, and easy setup with no hub required.",
+      "price": 12.99,
+      "image": "src/Images/Smart Plug.jpg"
+    },
+    {
+      "id": "20",
+      "name": "External Hard Drive",
+      "description": "2TB external hard drive USB 3.0, fast data transfer, durable casing, plug-and-play compatibility, and backup software included.",
+      "price": 89.99,
+      "image": "src/Images/External Hard Drive.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": "3",
+      "name": "Bluetooth Speaker",
+      "description": "Portable speaker with 20-hour battery life, deep bass, waterproof design (IPX7), Bluetooth 5.0, built-in microphone, and compact size for easy travel.",
+      "price": 89.99,
+      "image": "src/Images/Bluetooth Speaker.avif"
+    },
+    {
+      "id": "4",
+      "name": "Laptop Backpack",
+      "description": "Durable backpack with USB charging port, padded laptop compartment (fits up to 15.6\"), water-resistant material, multiple pockets, and ergonomic shoulder straps.",
+      "price": 49.99,
+      "image": "src/Images/Laptop Backpack.webp"
+    },
+    {
+      "id": "5",
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with silent clicks, adjustable DPI settings, long battery life, USB receiver, and comfortable grip for extended use.",
+      "price": 29.99,
+      "image": "src/Images/Wireless Mouse.jpg"
+    },
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation, 40-hour battery life, comfortable over-ear design, Bluetooth 5.0 connectivity, and built-in microphone for hands-free calls.",
+      "price": 199.99,
+      "image": "src/Images/Wireless headphone.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Smart Watch",
+      "description": "Feature-rich smartwatch with health monitoring, heart rate and sleep tracking, GPS, water resistance, customizable watch faces, and notifications for calls and messages.",
+      "price": 249.99,
+      "image": "src/Images/Smart watch.jpg"
+    }
+  ]
+}
