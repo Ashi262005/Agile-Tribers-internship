@@ -1,0 +1,103 @@
+.carousel {
+    position: relative;
+    max-width: 950px;
+    margin: 48px auto;
+    text-align: center;
+    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 60%, #c7d2fe 100%);
+    box-shadow: 0 10px 36px rgba(60, 60, 120, 0.18), 0 1.5px 6px rgba(0,0,0,0.04);
+    border-radius: 22px;
+    padding: 40px 0 28px 0;
+    transition: box-shadow 0.3s, background 0.4s;
+    overflow: hidden;
+}
+
+.carousel:hover {
+    box-shadow: 0 16px 48px rgba(60, 60, 120, 0.28), 0 2px 8px rgba(0,0,0,0.08);
+    background: linear-gradient(120deg, #e0e7ef 0%, #c7d2fe 100%);
+}
+
+.carousel img {
+    max-width: 92%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.13);
+    transition: transform 0.35s, box-shadow 0.3s;
+    border: 3px solid #e0e7ef;
+}
+
+.carousel img:hover {
+    transform: scale(1.045) rotate(-1deg);
+    box-shadow: 0 10px 32px rgba(0,0,0,0.18);
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #334155 60%, #64748b 100%);
+    color: #fff;
+    border: none;
+    padding: 16px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 26px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+    transition: background 0.22s, transform 0.22s, box-shadow 0.22s;
+    z-index: 2;
+    outline: none;
+}
+
+.carousel button:hover, .carousel button:focus {
+    background: linear-gradient(135deg, #2563eb 60%, #60a5fa 100%);
+    transform: translateY(-50%) scale(1.13);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+}
+
+.carousel button:active {
+    background: #1e40af;
+}
+
+.carousel button.next {
+    right: 24px;
+}
+
+.indicators {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.indicators span {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #d1d5db;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid transparent;
+}
+
+.indicators span.active {
+    background: #007bff;
+    border-color: #0056b3;
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        max-width: 100%;
+        padding: 12px 0 10px 0;
+    }
+    .carousel img {
+        height: 180px;
+    }
+    .carousel button {
+        padding: 10px 12px;
+        font-size: 16px;
+        left: 8px;
+        right: 8px;
+    }
+}

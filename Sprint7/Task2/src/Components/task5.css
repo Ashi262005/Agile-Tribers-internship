@@ -1,0 +1,42 @@
+.Openmodal {
+    margin: 8px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, orange 60%, #ffb347 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(255, 165, 0, 0.15);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+.Openmodal:hover, button:focus {
+    background: linear-gradient(90deg, #ff9800 60%, #ffd580 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(255, 165, 0, 0.25);
+    outline: none;
+}
+
+.container {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 32px 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9 70%, #ffe5b4 100%);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.close{
+    position: relative;
+    bottom:350px;
+    left: 250px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+}

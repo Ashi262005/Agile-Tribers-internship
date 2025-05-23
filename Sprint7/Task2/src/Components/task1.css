@@ -1,0 +1,72 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f8fafc 60%, #e0f7fa 100%);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s;
+}
+
+.counter:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.counter-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    margin: 1.5rem 0;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.counter button {
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #222 60%, #00695c 100%);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-top: 4px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.counter button:hover {
+    background: linear-gradient(90deg, #00695c 60%, #222 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.counter button:active {
+    background: #004d40;
+    transform: scale(0.98);
+}
+
+@media (max-width: 700px) {
+    .counter {
+        padding: 1rem;
+        max-width: 95%;
+    }
+    .counter-value {
+        font-size: 2rem;
+    }
+    .counter button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
